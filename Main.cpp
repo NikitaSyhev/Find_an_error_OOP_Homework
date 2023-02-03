@@ -11,7 +11,7 @@ public:
 		std::cout << "Car class" << std::endl;
 	}
 };
-void foo(const std::vector<IVehicle*>& vec) { // убрали const
+void foo(const std::vector<IVehicle*>& vec) { // СѓР±СЂР°Р»Рё const
 	for (size_t i = 0; i < vec.size(); i++) {
 		vec[i]->printName();
 	}
@@ -28,7 +28,7 @@ int main() {
 	foo(vec);
 
 
-	delete vehicle; // добавили delete
+	delete vehicle; // РґРѕР±Р°РІРёР»Рё delete
 	delete vehicle2;
 
 	return 0;
